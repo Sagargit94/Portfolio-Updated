@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Sagar K</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="profile-img">
+            <h2>Hello, I'm <span class="accent">Sagar K</span></h2>
+            <p>Aspiring Web Developer passionate about building beautiful, accessible websites.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a beginner web developer learning HTML, CSS, and JavaScript. I love creating simple, clean websites and continuously improving my skills.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>My First Website</h3>
+                    <p>A personal blog built with HTML and CSS.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>To-Do List App</h3>
+                    <p>A simple JavaScript app to manage daily tasks.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (basic)</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: <a href="mailto:sagar.k@email.com">sagar.k@email.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sagar K</p>
+    </footer>
+
+    <script>
+    // Simple form handler for demo (no backend)
+    document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thanks for reaching out!");
+        this.reset();
+    });
+    </script>
+</body>
+</html>
