@@ -137,16 +137,4 @@ footer {
         flex-direction: column;
         gap: 0.5rem;
     }
-    .gallery img {
-  width: 25%;
-  margin: 5px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .gallery img {
-    width: 100%;
-  }
-}
-
 }
